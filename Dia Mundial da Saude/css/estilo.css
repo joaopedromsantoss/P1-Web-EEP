@@ -1,13 +1,89 @@
 * { /*Estilos em comum para todas as paginas*/
-
+    box-sizing: border-box;
 }
 
-.cabecalho { /*Estilos do cabecalho(Navbar)*/
+html, body { /*Faz a pagina ocupar a tela inteire e remove as bordas*/
+    height: 100%;
+    margin: 0;
+}
+
+body { /*Organiza os elementos um em cima do outro (header, main, footer)*/
+    display: flex;
+    flex-direction: column;
+}
+
+main { /*Faz o main ocupar todo o espaço disponivel*/
+    flex: 1;
+}
+
+.cabecalho { /*Estilos do cabecalho no geral*/
+    background-color: #57ffb0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar { /*Estilos do navbar*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.navbar .logo { /*Ajusta o espaçamento entre os itens*/
+    display: flex;  
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo img { /*Tamanho da imagem*/
+    height: 100px;
 
 }
+.navbar .logo h1{ /*tamanho e cor da fonte*/
+    font-size: 225%;
+    color: #0e3a26;
+}
+
+.navbar .paginas { /*Faz a lista ficar horizontal e organizada*/
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .paginas li a { /*Aciona a mudança a cor ao passar o mouse por cima*/
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .paginas li a:hover { /*Cor que sera aplicada ao passar o mouse por cima*/
+    color: #2e7d32;
+}
+
+.navbar .paginas li a { /*Tamanho e cor da fonte*/
+    font-size: 160%;
+    color: #0e3a26;
+}
+
 
 .rodape { /*Estilos do rodape*/
+    background-color: #57ffb0;
+    color: #333;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 10px;
+}
 
+.rodape h1 { /*Cor da fonte*/
+    color: #0e3a26;
 }
 
 #homePage { /*Estilos da pagina index.html*/

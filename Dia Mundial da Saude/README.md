@@ -1,6 +1,6 @@
 # Dia Mundial da Saude
 
-Site em homenagem ao Dia Mundial da Saúde (7 de abril), com foco na conscientização sobre saúde física e mental, bem-estar e hábitos saudáveis.  
+Site em homenagem ao Dia Mundial da Saúde, com foco na conscientização sobre saúde física e mental, bem-estar e hábitos saudáveis.
 
 ## Estrutura de Pastas
 
