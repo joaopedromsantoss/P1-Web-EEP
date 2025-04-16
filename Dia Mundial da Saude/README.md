@@ -1,28 +1,28 @@
 # Dia Mundial da Saude
 
-Site em homenagem ao Dia Mundial da Saúde (7 de abril), com foco na conscientização sobre saúde física e mental, bem-estar e hábitos saudáveis.
+Site em homenagem ao Dia Mundial da Saúde (7 de abril), com foco na conscientização sobre saúde física e mental, bem-estar e hábitos saudáveis.  
 
 ## Estrutura de Pastas
 
-/Dia Mundial da Saude
-│
-├── index.html
-├── saude.html
-├── bem_estar.html
-├── contato.html
-│
-├── css/
-│   └── estilo.css
-│
-├── img/
-│   ├── logo.png
-│   └── banner.jpg
-│
-│
-├── videos/
-│   └── video.mp4
-│
-└── README.md
+/Dia Mundial da Saude  
+│  
+├── index.html  
+├── saude.html  
+├── bem_estar.html  
+├── contato.html  
+│  
+├── css/  
+│   └── estilo.css  
+│  
+├── img/  
+│   ├── logo.png  
+│   └── banner.jpg  
+│  
+│  
+├── videos/  
+│   └── video.mp4  
+│  
+└── README.md  
 
 ## Integrantes do Grupo
 
