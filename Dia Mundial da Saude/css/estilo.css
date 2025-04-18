@@ -285,17 +285,12 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-
-  .tabela thead {
-    background-color: #57ffb0;
-    color: #0e3a26;
-  }
-
   .tabela th,
   .tabela td {
     padding: 15px;
     text-align: left;
     font-size: 1.1em;
+    border-radius: 8px ;
   }
 
   .tabela td img {
