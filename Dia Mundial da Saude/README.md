@@ -28,4 +28,4 @@ Site em homenagem ao Dia Mundial da Saúde, com foco na conscientização sobre 
 
 - Arthur Lima Xavier – RA: 202510012 
 - Gabriel Palauro Fuzatto – RA: 202510119
-- Nome Completo 3 – RA: xxxxxxxx
+- João Pedro Mendes dos Santos – RA: 202510011
