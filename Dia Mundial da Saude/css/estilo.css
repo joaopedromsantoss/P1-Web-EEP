@@ -1,188 +1,376 @@
-* { /*Estilos em comum para todas as paginas*/
-    box-sizing: border-box;
+* {
+  /*Estilos em comum para todas as paginas*/
+  box-sizing: border-box;
 }
 
-html, body { /*Faz a pagina ocupar a tela inteire e remove as bordas*/
-    height: 100%;
-    margin: 0;
+h1,
+h2,
+h3,
+b,
+label {
+  /*cores padroes*/
+  color: #2e7d32;
 }
 
-body { /*Organiza os elementos um em cima do outro (header, main, footer)*/
+h1 {
+  /*Tamanho padrao das fontes*/
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3,
+label {
+  font-size: 2rem;
+}
+
+p,
+td {
+  font-size: 1.5rem;
+}
+
+b {
+  font-size: 1.65rem;
+}
+
+html,
+body {
+  /*geral*/
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+  /*Organiza os elementos um em cima do outro (header, main, footer)*/
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  /*Faz o main ocupar o espaço apenas abaixo do navbar*/
+  margin-top: 80px;
+  padding-bottom: 60px;
+  background-color: #f0f8f4;
+  flex: 1;
+  position: relative;
+}
+
+.cabecalho {
+  /*Estilos do cabecalho no geral*/
+  background-color: #a3f3b3;
+  padding: 0px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+  /* Altura do navbar */
+  width: 100%;
+}
+
+.navbar {
+  /*Estilos do navbar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .logo {
+  /*Ajusta o espaçamento entre os itens*/
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar .logo img {
+  /*Tamanho da imagem*/
+  height: 100px;
+
+}
+
+.navbar .logo h1 {
+  /*tamanho e cor da fonte*/
+  font-size: 225%;
+  color: #0a5030;
+}
+
+.navbar .paginas {
+  /*Faz a lista ficar horizontal e organizada*/
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .paginas li a {
+  /*Aciona a mudança a cor ao passar o mouse por cima*/
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar .paginas li a:hover {
+  /*Cor que sera aplicada ao passar o mouse por cima*/
+  color: #2e7d32;
+}
+
+.navbar .paginas li a {
+  /*Tamanho e cor da fonte*/
+  font-size: 160%;
+  color: #0a5030;
+}
+
+.rodape {
+  /*Estilos do rodape*/
+  background-color: #a3f3b3;
+  color: #333;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0;
+  font-size: 10px;
+}
+
+.rodape h1 {
+  /*Cor da fonte*/
+  color: #0e3a26;
+  font-size: large;
+  margin-top: auto;
+}
+
+#homePage {
+  /*Estilos da pagina index.html*/
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #388E3C;
+  }
+
+  .conteudo {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .conteudo h2 {
+    margin-bottom: 1rem;
+  }
+
+  .conteudo img {
+    width: 110%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    margin-left: -5%;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    align-items: stretch;
+  }
+
+  .card {
+    background: white;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-}
-
-main { /*Faz o main ocupar todo o espaço disponivel*/
-    flex: 1;
-}
-
-.cabecalho { /*Estilos do cabecalho no geral*/
-    background-color: #57ffb0;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.navbar { /*Estilos do navbar*/
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-} 
+  }
 
-.navbar .logo { /*Ajusta o espaçamento entre os itens*/
-    display: flex;  
-    align-items: center;
-    gap: 10px;
-}
+  .card:hover {
+    transform: translateY(-5px);
+  }
 
-.navbar .logo img { /*Tamanho da imagem*/
-    height: 100px;
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 
-}
-.navbar .logo h1{ /*tamanho e cor da fonte*/
-    font-size: 225%;
-    color: #0e3a26;
-}
+  .card h3 {
+    margin: 1rem 0 0.5rem;
+  }
 
-.navbar .paginas { /*Faz a lista ficar horizontal e organizada*/
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
+  .card p {
+    padding: 0 1rem 1rem;
+  }
 
-.navbar .paginas li a { /*Aciona a mudança a cor ao passar o mouse por cima*/
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+  .texto_principal p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+  }
 
-.navbar .paginas li a:hover { /*Cor que sera aplicada ao passar o mouse por cima*/
-    color: #2e7d32;
-}
-
-.navbar .paginas li a { /*Tamanho e cor da fonte*/
-    font-size: 160%;
-    color: #0e3a26;
+  .imagem_topo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 
-.rodape { /*Estilos do rodape*/
-    background-color: #57ffb0;
-    color: #333;
+#saudePage {
+  /* Estilos da página saude.html */
+  .video {
     text-align: center;
-    padding: 5px 10px;
-    margin: 0;
-    font-size: 10px;
+    padding: 10px;
+  }
+
+  .video iframe {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .textoSaude {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 60%;
+    width: 100%;
+
+  }
 }
 
-.rodape h1 { /*Cor da fonte*/
+#bemEstarPage {
+  /*Estilos da pagina bem_estar.html*/
+
+  .titulo {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .tabela {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .tabela thead {
+    background-color: #57ffb0;
     color: #0e3a26;
+  }
+
+  .tabela th,
+  .tabela td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1em;
+  }
+
+  .tabela td img {
+    border-radius: 10px;
+  }
+
+  .texto,
+  .conteudo p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 60%;
+    width: 100%;
+  }
 }
 
-#homePage { /*Estilos da pagina index.html*/
-
-      .intro {
-        padding: 2rem;
-        max-width: 900px;
-        margin: auto;
-        text-align: center;
-      }
-      .btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.6rem 1.2rem;
-        background-color: #4CAF50;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-      
-      .btn:hover {
-        background-color: #388E3C;
-      }
-
-      .intro {
-        padding: 2rem;
-        max-width: 900px;
-        margin: auto;
-        text-align: center;
-      }
-      
-      .intro h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: #2E7D32;
-      }
-      
-      .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem;
-        padding: 2rem 1rem;
-        align-items: stretch; 
-      }
-      
-      .card {
-        background: white;
-        width: 300px;
-        padding: 1rem;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
-      }
-      
-      .card:hover {
-        transform: translateY(-5px);
-      }
-      
-      .card img {
-        width: 100%;
-        height: auto;
-      }
-      
-      .card h3 {
-        margin: 1rem 0 0.5rem;
-        color: #388E3C;
-      }
-      
-      .card p {
-        padding: 0 1rem 1rem;
-      }
-
-      .texto-principal p {
-        margin-bottom: 1.2rem;
-        line-height: 1.8;
-        font-size: 1.05rem;
-      }
-      .imagem-topo {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 1.5rem;
-      }
-}      
+#contatoPage {
+  /*Estilos da pagina contato.html*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 
 
-#saudePage { /*Estilos da pagina saude.html*/
+  .card {
+    background-color: rgba(255, 255, 255, 0.548);
+    padding: 2rem;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0.2, 0.5);
+    border-radius: 12px;
+  }
 
-}
+  .card .titulo h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
 
-#bemEstarPage { /*Estilos da pagina bem_estar.html*/
+  .form_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 
-}
+  .form_itens {
+    display: flex;
+    flex-direction: column;
+  }
 
-#contatoPage{ /*Estilos da pagina contato.html*/
+  .form_itens label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .form_itens input,
+  .form_itens textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .enviar {
+    align-content: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .enviar:hover {
+    background-color: #0f2e11;
+  }
 
 }

@@ -1,28 +1,6 @@
 # Dia Mundial da Saude
 
-Site em homenagem ao Dia Mundial da Saúde, com foco na conscientização sobre saúde física e mental, bem-estar e hábitos saudáveis.
-
-## Estrutura de Pastas
-
-/Dia Mundial da Saude  
-│  
-├── index.html  
-├── saude.html  
-├── bem_estar.html  
-├── contato.html  
-│  
-├── css/  
-│   └── estilo.css  
-│  
-├── img/  
-│   ├── logo.png  
-│   └── banner.jpg  
-│  
-│  
-├── videos/  
-│   └── video.mp4  
-│  
-└── README.md  
+Website feito como atividade p1 da matéria de Sistemas Web da faculdade EEP. Homenagem ao dia mundial da saúde.
 
 ## Integrantes do Grupo
 

@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header class="cabecalho">
-        <nav class="navbar">
-          <div class="logo">
-            <img src="img/logo.png" alt="">
-            <h1>Dia Mundial da saude</h1>
-          </div>
-      
-          <ul class="paginas">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="saude.html">Saúde</a></li>
-            <li><a href="bem_estar.html">Bem-Estar</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-    </header>
+  <header class="cabecalho">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+        <h1>Saudify</h1>
+      </div>
 
-    <main id="contatoPage"> <!--Corpo da pagina-->
+      <ul class="paginas">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="saude.html">Saúde</a></li>
+        <li><a href="bem_estar.html">Bem-Estar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </main>  
+  <main id="contatoPage">
+    <section class="card">
+      <div class="titulo">
+        <h2>Entre em Contato</h2>
+      </div>
+      <form action="obrigado.html" method="POST" class="form_contato">
+        <div class="form_itens">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
 
-    <footer class="rodape"> 
-        <h1>&copy; Dia Mundial da Saúde</h1>
-    </footer>
+        <div class="form_itens">
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" required>
+        </div>
+
+        <div class="form_itens">
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" required>
+        </div>
+
+        <div class="form_itens">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" required>
+        </div>
+
+        <div class="form_itens">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <div class="form_itens">
+          <label for="pais">País:</label>
+          <input type="text" id="pais" name="pais" required>
+        </div>
+
+        <div class="form_itens">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <h1>&copy; Dia Mundial da Saúde</h1>
+  </footer>
 </body>
+
 </html>
