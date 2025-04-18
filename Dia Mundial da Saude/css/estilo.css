@@ -10,6 +10,7 @@ b,
 label {
   /*cores padroes*/
   color: #2e7d32;
+  letter-spacing: 0.5px;
 }
 
 h1 {
@@ -29,6 +30,7 @@ label {
 p,
 td {
   font-size: 1.5rem;
+  line-height: 1.8;
 }
 
 b {
@@ -119,6 +121,7 @@ main {
   color: #333;
   font-weight: bold;
   transition: color 0.3s;
+  text-transform: uppercase;
 }
 
 .navbar .paginas li a:hover {
@@ -137,7 +140,7 @@ main {
   background-color: #a3f3b3;
   color: #333;
   text-align: center;
-  padding: 10px 10px;
+  padding: 15px 10px;
   margin: 0;
   font-size: 10px;
 }
@@ -147,6 +150,8 @@ main {
   color: #0e3a26;
   font-size: large;
   margin-top: auto;
+  text-transform:uppercase;
+  font-style:oblique;
 }
 
 #homePage {
@@ -296,6 +301,16 @@ main {
   .tabela td img {
     border-radius: 10px;
   }
+  .tabela td ol {
+    margin: 0 auto;
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: center;
+  }
+  
+  .tabela td ol li {
+    line-height: 1.8;
+  }
 
   .texto,
   .conteudo p {
@@ -325,6 +340,7 @@ main {
     width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0.2, 0.5);
     border-radius: 12px;
+    
   }
 
   .card .titulo h2 {
@@ -355,6 +371,41 @@ main {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
+  }
+
+  select {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  select:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.3);
+  }
+  
+  option {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+  }
+  
+  option:hover {
+    background-color: #e0f7e2;
+    color: #2e7d32;
   }
 
   .enviar {
